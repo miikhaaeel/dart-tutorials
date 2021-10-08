@@ -17,6 +17,7 @@ void main(List<String> args) {
     final duration = double.parse(durationStr);
     final tag = values[5].replaceAll('"', '');
     final previousTotal = totalDurationByTag[tag];
+    print(totalDurationByTag);
     if (previousTotal == null) {
       totalDurationByTag[tag] = duration;
     } else {
