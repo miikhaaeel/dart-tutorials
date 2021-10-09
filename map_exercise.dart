@@ -1,4 +1,9 @@
 void main() {
+  const order = ['margherita', 'chickenpizza', 'suyapizza', 'vegetarian'];
+  getOrder(order);
+}
+
+void getOrder(List orders) {
   const pizzaPrices = {
     'margherita': 5.5,
     'pepperoni': 7.5,
@@ -6,20 +11,19 @@ void main() {
     'chickenpizza': 7.0,
     'suyapizza': 8.5,
   };
-  const order = ['margherita', 'pepperoni', 'suyapizza', 'vegetarian'];
   var total = 0.0;
-  for (var item in order) {
-    final price = pizzaPrices[item];
+  for (var order in orders) {
+    final price = pizzaPrices[order];
     if (price != null) {
       total += price;
     } else {
-      print('order contains invalid item(s): $item');
+      print('order contains invalid item(s): $order');
     }
   }
 
-  for (int i = 0; i < order.length; i++) {
-    print('${order[i]} is \$${pizzaPrices[order[i]]}');
+  for (int i = 0; i < orders.length; i++) {
+    print('${orders[i]} is \$${pizzaPrices[orders[i]]}');
   }
-  
+
   print('Total: \$$total');
 }

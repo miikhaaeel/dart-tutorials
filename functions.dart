@@ -3,7 +3,7 @@ void main(List<String> args) {
   const age = 54;
   describe(name, age);
 
-  sum([45,90,34,23]);
+  sum([45, 90, 34, 23]);
 }
 
 void describe(String name, int age) {
