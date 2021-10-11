@@ -11,6 +11,7 @@ void getOrder(List orders) {
     'chickenpizza': 7.0,
     'suyapizza': 8.5,
   };
+  
   var total = 0.0;
   for (var order in orders) {
     final price = pizzaPrices[order];

@@ -1,4 +1,4 @@
-void main(List<String> args) {
+void main() {
   const name = 'Michael';
   const age = 54;
   describe(name, age);

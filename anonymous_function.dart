@@ -1,7 +1,7 @@
 void main() {
   final sayHi = (String name) => 'Hi, $name';
 
-  welcome((p0) => sayHi('Michael'), 'Michael');
+  welcome(sayHi,'Michael');
 }
 
 void welcome(String Function(String) greet, String name) {
